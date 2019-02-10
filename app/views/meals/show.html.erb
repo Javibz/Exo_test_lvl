@@ -1,0 +1,7 @@
+<h2>Voici le plat n°: <%= @meal.id %></h2>
+	
+	<p>Nom du plat : <%= @meal.title %></p>
+	<p>Description du plat : <%= @meal.description %></p>
+	<p>Type de plat : <%= @meal.meal_type.name %></p>
+	<%= link_to 'Valider', meal_path(@meal.id), class:"btn btn-primary" %>
+

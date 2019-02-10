@@ -1,0 +1,14 @@
+<h1>Coucou Bienvenue sur le site !!!!</h1>
+
+
+<% if user_signed_in? %>
+
+	<h2>Vous pouvez :</h2>
+	<p>/////////Voir la liste de toutes nos recettes <%= link_to 'ici', meals_path %></p>
+	<br>
+
+<% else %>
+
+	<h2>Veuillez vous <%= link_to 'Connecter', new_user_session_path, class:"btn btn-success" %> ou vous <%= link_to 'Enregistrer', new_user_registration_path, class:"btn btn-primary" %> pour acceder au contenu</h2>
+
+<% end %>
